@@ -86,7 +86,7 @@
 (saw-player (metro) repetition-b 1)
 (saw-player (metro) (transpose 12 repetition-a) 1)
 
-(kick-player (metro) 4 8)
+(tick-player (metro) 4 8)
 (saw-player (metro) score 1)
 
 (defn startplay []
