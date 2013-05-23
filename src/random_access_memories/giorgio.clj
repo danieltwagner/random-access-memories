@@ -42,19 +42,19 @@
 (defn transpose [updown notes]
   (map #(+ updown %1) notes))
 
-(def theme  ((concat
-            repetition-a
-            (transpose -5 repetition-a)
-            repetition-a
-            (transpose -5 repetition-a)
-            repetition-b
-            (transpose 2 repetition-b)
-            (transpose -2 repetition-b3)
-            repetition-b3
-            repetition-b
-            (transpose 2 repetition-b)
-            repetition-b3
-            repetition-b3)))
+(def theme  (concat
+              repetition-a
+              (transpose -5 repetition-a)
+              repetition-a
+              (transpose -5 repetition-a)
+              repetition-b
+              (transpose 2 repetition-b)
+              (transpose -2 repetition-b3)
+              repetition-b3
+              repetition-b
+              (transpose 2 repetition-b)
+              repetition-b3
+              repetition-b3))
 
 (def score (concat
             (concat (drop-last theme) [(note :A4)])
